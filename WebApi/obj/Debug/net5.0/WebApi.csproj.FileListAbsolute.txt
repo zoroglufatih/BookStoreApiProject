@@ -38,3 +38,4 @@ D:\patika-.net-core\web-api\BookStore\webapi\bin\Debug\net5.0\Microsoft.Extensio
 D:\patika-.net-core\web-api\BookStore\webapi\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\patika-.net-core\web-api\BookStore\webapi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 D:\patika-.net-core\web-api\BookStore\webapi\bin\Debug\net5.0\FluentValidation.dll
+D:\patika-.net-core\web-api\BookStore\webapi\bin\Debug\net5.0\Newtonsoft.Json.dll

@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using WebApi.DBOperations;
+using WebApi.Entities;
 
 namespace WebApi.DbOperations
 {
@@ -16,29 +17,41 @@ namespace WebApi.DbOperations
                 {
                     return;
                 }
-
+                
+                context.Genres.AddRange(
+                    new Genre
+                    {
+                        Name = "Personal Growth"
+                    },
+                    new Genre
+                    {
+                        Name = "Science Fiction"
+                    },
+                    new Genre
+                    {
+                        Name = "Romance"
+                    }
+                );
+                
                 context.Books.AddRange(
                     new Book
                     {
-                        //Id = 1,
                         Title = "Lean Startup",
-                        GenreId = 1, // Personal Growth
+                        GenreId = 1,
                         PageCount = 200,
                         PublishDate = new DateTime(2001, 06, 12)
                     },
                     new Book
                     {
-                        //Id = 2,
                         Title = "Hearland",
-                        GenreId = 2, // Science Fiction
+                        GenreId = 2,
                         PageCount = 250,
                         PublishDate = new DateTime(2010, 05, 23)
                     },
                     new Book
                     {
-                        //Id = 3,
                         Title = "Dune",
-                        GenreId = 2, // Science Fiction
+                        GenreId = 2,
                         PageCount = 540,
                         PublishDate = new DateTime(2002, 12, 21)
                     }
